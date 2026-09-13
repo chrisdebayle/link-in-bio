@@ -12,9 +12,9 @@
 
 <meta property="og:title" content="Chris Debayle">
 <meta property="og:description" content="Be Vigilant.">
-<meta property="og:image" content="assets/profile.png">
+<meta property="og:image" content="assets/hero.jpg">
 <meta property="og:type" content="profile">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -28,18 +28,26 @@
 <body>
 
 <div class="page">
+
+  <div class="hero">
+    <img class="hero__photo" src="assets/hero.jpg" alt="Chris Debayle" width="768" height="960" fetchpriority="high">
+    <div class="hero__fade"></div>
+    <button class="share-btn" type="button" aria-label="Share this page" id="share-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 7l4-4 4 4"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+    </button>
+    <span class="toast" id="share-toast">Link copied</span>
+  </div>
+
+  <div class="identity">
+    <div class="identity__name">Chris Debayle</div>
+    <div class="identity__handle">@chris_debayle</div>
+  </div>
+
+  <div class="tagline">Be Vigilant</div>
+
   <div class="card">
     <div class="card__spine"></div>
     <div class="card__inner">
-
-      <img class="profile-photo" src="assets/profile.png" alt="Chris Debayle" width="480" height="480" fetchpriority="high">
-
-      <div class="identity">
-        <div class="identity__name">Chris Debayle</div>
-        <div class="identity__handle">@chris_debayle</div>
-      </div>
-
-      <div class="tagline">Be Vigilant</div>
 
       <div class="groups">
 
@@ -48,8 +56,18 @@
             <span class="group__dot group__dot--faith"></span>
             <span class="group__title">Faith</span>
           </div>
-          <a class="link" href="#" target="_blank" rel="noopener">New Testament Study Plan For Men</a>
-          <a class="link" href="#" target="_blank" rel="noopener">Old Testament Study Plan For Men</a>
+          <a class="link" href="#" target="_blank" rel="noopener">
+            <span class="link__icon link__icon--faith">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5c-1.5-1-4-1.5-6-1v13c2 0 4.5.5 6 1.5 1.5-1 4-1.5 6-1.5V5.5c-2-.5-4.5 0-6 1z"/><path d="M12 6.5V20"/></svg>
+            </span>
+            <span class="link__content"><span class="link__title">New Testament Study Plan For Men</span></span>
+          </a>
+          <a class="link" href="#" target="_blank" rel="noopener">
+            <span class="link__icon link__icon--faith">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5c-1.5-1-4-1.5-6-1v13c2 0 4.5.5 6 1.5 1.5-1 4-1.5 6-1.5V5.5c-2-.5-4.5 0-6 1z"/><path d="M12 6.5V20"/></svg>
+            </span>
+            <span class="link__content"><span class="link__title">Old Testament Study Plan For Men</span></span>
+          </a>
         </div>
 
         <div class="group">
@@ -57,8 +75,18 @@
             <span class="group__dot group__dot--professional"></span>
             <span class="group__title">Professional</span>
           </div>
-          <a class="link link--primary" href="https://cal.com/chrisdebayle" target="_blank" rel="noopener">Book A Call</a>
-          <a class="link link--blue-hover" href="https://chrisdebayle.com" target="_blank" rel="noopener">chrisdebayle.com</a>
+          <a class="link link--primary" href="https://cal.com/chrisdebayle" target="_blank" rel="noopener">
+            <span class="link__icon link__icon--on-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
+            </span>
+            <span class="link__content"><span class="link__title">Book A Call</span></span>
+          </a>
+          <a class="link link--blue-hover" href="https://chrisdebayle.com" target="_blank" rel="noopener">
+            <span class="link__icon link__icon--professional">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9S9.5 5.5 12 3z"/></svg>
+            </span>
+            <span class="link__content"><span class="link__title">chrisdebayle.com</span></span>
+          </a>
         </div>
 
         <div class="group">
@@ -67,12 +95,22 @@
             <span class="group__title">Biohacking</span>
           </div>
           <a class="link link--stack link--accent-border" href="https://chrisdebayle.github.io/diy-formulations/formulations/electrohack-pro/" target="_blank" rel="noopener">
-            <span class="link__title">ElectroHack Pro</span>
-            <span class="link__subtitle">DIY Electrolyte Supplement</span>
+            <span class="link__icon link__icon--biohacking-a">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5.5 9.5A1.5 1.5 0 0 0 5.8 21h12.4a1.5 1.5 0 0 0 1.3-2.5L14 9V3"/><path d="M7.5 15h9"/></svg>
+            </span>
+            <span class="link__content">
+              <span class="link__title">ElectroHack Pro</span>
+              <span class="link__subtitle">DIY Electrolyte Supplement</span>
+            </span>
           </a>
           <a class="link link--stack link--accent2-border" href="https://chrisdebayle.github.io/diy-formulations/formulations/conduit/" target="_blank" rel="noopener">
-            <span class="link__title">Conduit</span>
-            <span class="link__subtitle">DIY Pre-Workout Supplement</span>
+            <span class="link__icon link__icon--biohacking-b">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 3-5 6.2-5 9a5 5 0 0 0 10 0c0-1.3-.5-2.4-1.2-3.3.1 1.3-.4 2.3-1.3 2.8-.8-1.3-.3-3-.3-5.2C13.5 5 12 3 12 3z"/></svg>
+            </span>
+            <span class="link__content">
+              <span class="link__title">Conduit</span>
+              <span class="link__subtitle">DIY Pre-Workout Supplement</span>
+            </span>
           </a>
         </div>
 
@@ -89,6 +127,47 @@
 
   <div class="footer">&copy; 2026 Chris Debayle</div>
 </div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('share-btn');
+    var toast = document.getElementById('share-toast');
+    var shownTimer;
+
+    function showToast(text) {
+      toast.textContent = text;
+      toast.classList.add('toast--visible');
+      clearTimeout(shownTimer);
+      shownTimer = setTimeout(function () {
+        toast.classList.remove('toast--visible');
+      }, 1800);
+    }
+
+    btn.addEventListener('click', async function () {
+      var shareData = {
+        title: document.title,
+        text: 'Be Vigilant.',
+        url: location.href
+      };
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          /* user cancelled share sheet — no action needed */
+        }
+        return;
+      }
+      if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(location.href);
+          showToast('Link copied');
+        } catch (err) {
+          showToast('Could not copy link');
+        }
+      }
+    });
+  })();
+</script>
 
 </body>
 </html>
