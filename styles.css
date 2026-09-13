@@ -208,7 +208,7 @@ a:hover {
 
 .link--blue-hover:hover,
 .link--blue-hover:focus-visible {
-  color: var(--db-primary);
+  color: var(--db-accent);
   border-color: var(--db-primary);
 }
 
