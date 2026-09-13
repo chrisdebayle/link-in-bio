@@ -16,6 +16,11 @@
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -24,8 +29,10 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 48px 16px;
+  padding: max(48px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right))
+    max(48px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
   font-family: var(--db-font-body);
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -168,6 +175,12 @@ a:hover {
   text-decoration: none;
   border: 1px solid var(--db-hair-2);
   border-radius: var(--db-radius);
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.link:active {
+  transform: scale(0.98);
+  opacity: 0.85;
 }
 
 .link--primary {
