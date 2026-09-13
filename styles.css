@@ -206,6 +206,12 @@ a:hover {
   border-color: var(--db-accent);
 }
 
+.link--blue-hover:hover,
+.link--blue-hover:focus-visible {
+  color: var(--db-primary);
+  border-color: var(--db-primary);
+}
+
 .link__title {
   font-size: 15px;
   font-weight: 500;
